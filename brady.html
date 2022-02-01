@@ -12,17 +12,14 @@
     </div>
 
     <div class="row">
-       <div class="col-2 box" id="links">
-           <h2 class="center">Quick Links</h2>
-               <a href="#" class="fade-in">Web Design</a>
-           <p></p>
-               <a href="#" class="fade-in" id="space">Art</a>
-           <p></p>
-               <a href="#" class="fade-in">Game Design</a>
-           
-           
-              
-       </div>
+        <div class="col-2 box" id="links">
+            <h2 class="center">Quick Links</h2>
+            <a href="#" class="fade-in">Web Design</a>
+            <p></p>
+            <a href="#" class="fade-in" id="space">Art</a>
+            <p></p>
+            <a href="#" class="fade-in">Game Design</a>
+        </div>
 
         <div class="col-10">
             <h2>About Me:</h2>
@@ -30,20 +27,28 @@
         </div>
     </div>
 
-    <div class="row center">
-        <div class="col-4">
-            <a href="#"><img src="Personal Website (Brady)/Images/Storm Series.jpg" class="image" height="350" width="450"/></a>
+    <div class="row">
+        <div class="col-12">
+            <h1>Main Pages</h1>
+        </div>
+    </div>
+
+    <div class="row center overflow border">
+        <div class="col-4 overflow">
+            <a href="#"><img src="Personal Website (Brady)/Images/Storm Series.jpg" class="image" height="350" width="450" /></a>
             <h1 class="floating-text">Writing</h1>
         </div>
-        <div class="col-4">
-            <a href="#"><img src="Personal Website (Brady)/Images/Nightmare Fuel.jpg" class="image" height="350" width="450"/></a>
+        <div class="col-4 overflow">
+            <a href="#"><img src="Personal Website (Brady)/Images/Nightmare Fuel.jpg" class="image" height="350" width="450" /></a>
             <h1 class="floating-text">Art</h1>
         </div>
-        <div class="col-4">
+        <div class="col-4 overflow">
             <a href="#"><img src="Personal Website (Brady)/Images/Snowy Ruins.jpeg" class="image" height="350" width="450" /></a>
             <h1 class="floating-text">Game Design</h1>
         </div>
     </div>
+
+    <div id="page-bottom"></div>
 
     <style>
 
@@ -127,11 +132,11 @@
             transition: 0.3s;
         }
 
-        header:hover {
-            border-color: grey;
-            padding: 50px;
-            transition: 0.3s;
-        }
+            header:hover {
+                border-color: grey;
+                padding: 50px;
+                transition: 0.3s;
+            }
 
         body {
             font-family: 'Segoe UI';
@@ -154,25 +159,25 @@
             text-align: center;
         }
 
-        #links:hover {
-            transition: 0.5s;
-            width: 100%;
-            font-size: 150%;
-            border: solid;
-            border-color: grey;
-            border-width: 10px;
-        }
+            #links:hover {
+                transition: 0.5s;
+                width: 100%;
+                font-size: 150%;
+                border: solid;
+                border-color: grey;
+                border-width: 10px;
+            }
 
         a {
             color: red;
             text-decoration: none;
         }
 
-        a:hover {
-            color: white;
-            text-decoration: underline;
-            transition: 0.3s;
-        }
+            a:hover {
+                color: white;
+                text-decoration: underline;
+                transition: 0.3s;
+            }
 
         .fade-in:hover {
             padding: 50px;
@@ -181,20 +186,21 @@
         .image {
             position: relative;
             opacity: 0.5;
+            margin-bottom: -175px;
             transition: 0.5s;
         }
 
-        .image:hover {
-            position: relative;
-            opacity: 1;
-            height: 400px;
-            width: 500px;
-            transition: 0.5s;
-        }
+            .image:hover {
+                position: relative;
+                opacity: 1;
+                height: 375px;
+                width: 475px;
+                transition: 0.5s;
+            }
 
         .floating-text {
             position: relative;
-            top: -275px;
+            top: -100px;
             left: 0px;
             right: 0px;
             bottom: 0px;
@@ -203,6 +209,14 @@
             color: black;
         }
 
+        .border {
+            border: solid;
+            border-color: 3px;
+        }
+
+        #page-bottom {
+            padding: 25px;
+        }
     </style>
 </body>
 </html >
