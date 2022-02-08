@@ -49,3 +49,29 @@ h2{
         max-width: 50%;
         padding-top: 20px;
     }
+
+    
+.css-selector {
+    background: linear-gradient(166deg, #2fe5b6, #e54d2f);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 34s ease infinite;
+    -moz-animation: AnimationName 34s ease infinite;
+    animation: AnimationName 34s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:33% 0%}
+    50%{background-position:68% 100%}
+    100%{background-position:33% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:33% 0%}
+    50%{background-position:68% 100%}
+    100%{background-position:33% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:33% 0%}
+    50%{background-position:68% 100%}
+    100%{background-position:33% 0%}
+}
