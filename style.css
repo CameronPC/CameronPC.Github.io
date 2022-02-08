@@ -17,6 +17,20 @@ h2{
     margin-right: auto;
   }
 
-  .navigation{
-      background-color: #DEDEDE;
-  }
+  .navigation nav {
+    background-color: #71A5A7;
+    border-radius: 10px;
+    padding: 5px 0;
+    overflow: hidden;
+}
+
+    .navigation nav ul {
+        text-align: center;
+    }
+
+    .navigation nav li {
+        display: inline;
+    }
+    .navigation nav a {
+        padding: 20px 30px;
+    }
