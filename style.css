@@ -17,7 +17,40 @@ h2{
     margin-right: auto;
   }
 
+  .navigation nav {
+    background-color: #71A5A7;
+    border-radius: 10px;
+    padding: 5px 0;
+    overflow: hidden;
+}
 
+    .navigation{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0px;
+    }
+
+    .navigation nav ul {
+        text-align: center;
+    }
+
+    .navigation nav li {
+        display: inline;
+    }
+    .navigation nav a {
+        padding: 20px 30px;
+    }
+    .navigation nav a:hover {
+        background-color: steelblue;
+        padding: 30px;
+    }
+
+    #Kuntz-img{
+        max-width: 50%;
+        padding-top: 20px;
+    }
+
+    
   .css-selector {
     background: linear-gradient(166deg, #2fe5b6, #e54d2f);
     background-size: 400% 400%;
