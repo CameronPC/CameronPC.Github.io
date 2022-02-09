@@ -86,15 +86,16 @@ h2{
 }
 
 .triangle{
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: calc(2 * 20px * 0.866) solid green;
-    border-top: 20px solid transparent;
-    display: inline-block;
-    animation-name: triangle;
+    
+ width: 40px;
+ height: 40px;
+ background: green;
+clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+    animation-name: triangle1;
     animation-duration: 4s;
 }
-@keyframes triangle {
+@keyframes triangle1 {
     from {background-color: slateblue;}
     to {background-color: yellow;}
   }
