@@ -75,3 +75,10 @@ h2{
         50%{background-position:100% 50%}
         100%{background-position:0% 50%}
     }
+
+    .size-circle{
+        width: 100px;
+        height: 100px;
+        border-radius: 90px;
+        background-color: red;
+    }
