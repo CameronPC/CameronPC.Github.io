@@ -79,6 +79,18 @@ h2{
     .size-circle{
         width: 100px;
         height: 100px;
-        border-radius: 90px;
+        border-radius: 100%;
         background-color: red;
+
+        animation: SizeCircle 10s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes SizeCircle {
+        0%{width: 150px; height: 150px;}
+        10%{width: 50px; height: 50px;}
+        20%{width: 200px; height: 200px;}
+        50%{width: 600px; height: 600px;}
+        75%{width: 300px; height: 300px;}
+        100%{width: 100px; height: 100px;}
     }
