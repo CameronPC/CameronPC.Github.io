@@ -107,6 +107,7 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     animation-name: triangle1;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+    
 }
 @keyframes triangle1 {
     from {background-color: slateblue;}
