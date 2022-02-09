@@ -82,3 +82,19 @@ h2{
         border-radius: 90px;
         background-color: red;
     }
+
+}
+
+.triangle{
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: calc(2 * 20px * 0.866) solid green;
+    border-top: 20px solid transparent;
+    display: inline-block;
+    animation-name: triangle;
+    animation-duration: 4s;
+}
+@keyframes triangle {
+    from {background-color: slateblue;}
+    to {background-color: yellow;}
+  }
