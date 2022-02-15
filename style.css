@@ -81,6 +81,7 @@ h2{
         height: 100px;
         border-radius: 100%;
         background-color: red;
+<<<<<<< Updated upstream
         animation: SizeCircle 10s;
         animation-iteration-count: infinite;
     }
@@ -136,3 +137,8 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
         left: 200px;
     }
 }
+=======
+    }
+
+    
+>>>>>>> Stashed changes
