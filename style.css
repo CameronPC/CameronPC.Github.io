@@ -22,7 +22,7 @@
   }
 
   .navigation nav {
-    background-color: #71A5A7;
+    background-color: #ce3b16;
     border-radius: 10px;
     padding: 5px 0;
     overflow: hidden;
@@ -43,10 +43,15 @@
     }
     .navigation nav a {
         padding: 20px 30px;
+        color: white;
+        text-decoration: none;
     }
     .navigation nav a:hover {
-        background-color: steelblue;
+        background-color: rgb(128, 13, 13);
+        color:white;
         padding: 30px;
+        transition: 0.5s;
+        border: 3px solid white;
     }
 
     #Kuntz-img{
