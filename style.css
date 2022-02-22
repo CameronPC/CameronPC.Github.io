@@ -273,7 +273,7 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     background-image: radial-gradient(#242424, red, #242424, #ea2f01);
 }
 
-#foreground {
+.foreground {
     border: solid;
     border-radius: 10px;
     border-color: darkred;
@@ -281,6 +281,10 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     margin: 10px;
     color: #a09c9c;
     font-family: Lato;
+}
+
+a {
+    color: yellow;
 }
 
 .card {
@@ -291,7 +295,7 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
 .card {
-    background-color: orange;
+    background-color: #c45100;
     display: block;
     margin-left: 50px;
     margin-right: 50px;
@@ -303,12 +307,15 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 .card h3 {
     padding: 10px;
     text-align: left;
+    color: black;
 }
 
 .card p {
     padding: 10px;
     margin: 0px 20px 0px 0px;
     text-align: left;
+    color: black;
+    font-family: Cambria;
 }
 
 .card:hover {
