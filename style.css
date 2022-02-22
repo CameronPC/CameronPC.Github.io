@@ -224,5 +224,7 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 
 .card {
     border: solid;
+    border-color: peachpuff;
     border-radius: 20px;
+    background-color: orange;
 }
