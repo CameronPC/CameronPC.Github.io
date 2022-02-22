@@ -311,7 +311,7 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 .card:hover {
     border-color: mintcream;
     padding: 10px;
-    box-shadow: 0px 0px 100px #aaaaaa;
+    box-shadow: 0px 0px 100px #d47709;
     transition: 0.5s;
 }
 
