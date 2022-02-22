@@ -215,3 +215,13 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
         left: 200px;
     }
 }
+
+#brady {
+    border: solid;
+    border-radius: 10px;
+}
+
+.card {
+    border: solid;
+    border-radius: 20px;
+}
