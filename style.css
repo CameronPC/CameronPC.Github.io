@@ -67,6 +67,7 @@
     content: "";
     clear: both;
     display: table;
+    padding: 5px;
 }
 
 .camback {
