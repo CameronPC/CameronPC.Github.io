@@ -270,9 +270,14 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   }
 
 #brady {
+    background-image: radial-gradient(#242424, red, #242424, #ea2f01);
+}
+
+#foreground {
     border: solid;
     border-radius: 10px;
-    background-color: rgb(128, 13, 13);
+    background-image: linear-gradient(320deg, rgb(128, 13, 13), #be0000);
+    margin: 10px;
 }
 
 .card {
