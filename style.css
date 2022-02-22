@@ -318,6 +318,5 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 .card:hover h3 {
     transition: 0.5s;
     text-align: center;
-    
 }
 
