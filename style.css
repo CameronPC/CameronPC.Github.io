@@ -220,6 +220,7 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 #brady {
     border: solid;
     border-radius: 10px;
+    background-color: rgb(128, 13, 13);
 }
 
 .card {
@@ -279,15 +280,38 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     color: white;
     transform: rotateY(180deg);
   }
+
+.card {
+    background-color: orange;
     display: block;
     margin-left: 50px;
-    margin-right: 50px;;
+    margin-right: 50px;
+    text-align: center;
+    transition: 0.5s;
+    box-shadow: 0px 0px 0px #888888;
 }
 
 .card h3 {
     padding: 10px;
+    text-align: left;
 }
 
 .card p {
     padding: 10px;
+    margin: 0px 20px 0px 0px;
+    text-align: left;
 }
+
+.card:hover {
+    border-color: mintcream;
+    padding: 10px;
+    box-shadow: 0px 0px 100px #aaaaaa;
+    transition: 0.5s;
+}
+
+.card:hover h3 {
+    transition: 0.5s;
+    text-align: center;
+    
+}
+
