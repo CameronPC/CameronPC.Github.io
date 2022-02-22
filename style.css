@@ -227,6 +227,9 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     border-color: peachpuff;
     border-radius: 20px;
     background-color: orange;
+    display: block;
+    margin-left: 50px;
+    margin-right: 50px;;
 }
 
 .card h3 {
@@ -235,5 +238,4 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 
 .card p {
     padding: 10px;
-    margin: 0px 20px 0px 0px;
 }
