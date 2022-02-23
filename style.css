@@ -270,13 +270,14 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   }
 
 .background {
-    background-image: radial-gradient(#242424, red, #242424, #ea2f01);
+    background-image: repeating-linear-gradient(140deg, #242424, red, #242424, #ea2f01);
 }
 
 .foreground {
     border: solid;
     border-radius: 10px;
     border-color: darkred;
+    border-width: 5px;
     background-image: linear-gradient(160deg, #750000, #242424);
     margin: 10px;
     color: #e7e7e7;
