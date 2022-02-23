@@ -277,7 +277,7 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     border: solid;
     border-radius: 10px;
     border-color: darkred;
-    background-image: linear-gradient(160deg, #5a0202, #242424);
+    background-image: linear-gradient(160deg, #750000, #242424);
     margin: 10px;
     color: #e7e7e7;
     font-family: Lato;
@@ -330,3 +330,22 @@ a {
     text-align: center;
 }
 
+#magic-desc {
+    text-align: center;
+}
+
+#magic-desc table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#magic-desc th {
+    padding: 10px;
+    border-width: 100px;
+    border: solid;
+    border-color: #c45100;
+}
+
+.table-header {
+    background-color: #c45100;
+}
