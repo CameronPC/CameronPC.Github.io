@@ -283,7 +283,10 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     color: white;
     transform: rotateY(180deg);
   }
-
+.mylesmap{
+    width: 300px;
+    height: 200px ;
+}
 .card {
     background-color: orange;
     display: block;
