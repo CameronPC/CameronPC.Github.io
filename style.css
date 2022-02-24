@@ -70,6 +70,10 @@
     padding: 5px;
 }
 
+body {
+    font-size: 20px;
+}
+
 .background { /*Universal Class*/
     background-image: repeating-linear-gradient(140deg, #242424, red, #242424, #ea2f01);
 }
@@ -302,9 +306,13 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     background-color: #3e1e1e;
     position: relative;
     float: right;
-    color: grey;
     font-style: italic;
     text-align: center;
+}
+
+.img-holder p {
+    font-size: 16px;
+    color: grey;
 }
 
 .img-holder img {
@@ -312,6 +320,8 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     border-radius: 10px;
     box-shadow: 5px 0px 10px black;
 }
+
+
 
 /* BRADY'S CSS STUFF DO NOT MESS WITH YOU PLONKERS*/
 
