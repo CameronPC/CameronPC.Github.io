@@ -74,6 +74,10 @@ body {
     font-size: 20px;
 }
 
+a {
+    color: yellow;
+}
+
 .background { /*Universal Class*/
     background-image: repeating-linear-gradient(140deg, #242424, red, #242424, #ea2f01);
 }
