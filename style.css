@@ -307,8 +307,10 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     height: 200px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    font-size: 60% ;
   
   }
+  
   
   /* This container is needed to position the front and back side */
   .flip-box-inner-index {
@@ -348,6 +350,7 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     background-color: dodgerblue;
     color: white;
     transform: rotateY(180deg);
+  
     
   }
 .mylesmap{
