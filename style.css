@@ -70,6 +70,14 @@
     padding: 5px;
 }
 
+body {
+    font-size: 20px;
+}
+
+a {
+    color: yellow;
+}
+
 .background { /*Universal Class*/
     background-image: repeating-linear-gradient(140deg, #242424, red, #242424, #ea2f01);
 }
@@ -118,6 +126,7 @@
         position: -webkit-sticky;
         position: sticky;
         top: 0px;
+        z-index: 3;
     }
 
     .navigation nav ul {
@@ -250,10 +259,11 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 
 .flip-box-myles {
     background-color: transparent;
-    width: 300px;
+    width: 85%;
     height: 200px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    
   }
   
   /* This container is needed to position the front and back side */
@@ -264,6 +274,7 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+  
   }
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -278,12 +289,14 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
+    
   }
   
   /* Style the front side (fallback if image is missing) */
   .flip-box-front-myles {
     background-color: #bbb;
     color: black;
+   
   }
   
   /* Style the back side */
@@ -291,11 +304,131 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     background-color: dodgerblue;
     color: white;
     transform: rotateY(180deg);
+    
+  }
+  .flip-box-index {
+    background-color: transparent;
+    width: 85%;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    font-size: 60% ;
+  
+  }
+  
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner-index {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box-index:hover .flip-box-inner-index {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front-index, .flip-box-back-index {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+ 
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front-index {
+    background-color: #bbb;
+    color: black;
+  
+  }
+  
+  /* Style the back side */
+  .flip-box-back-index {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  
+    
   }
 .mylesmap{
-    width: 300px;
-    height: 200px ;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
+.bradymap{
+    width: 100%;
+    height: 100% ;
+    overflow-x: hidden;
+}
+.cammap{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+.rykermap{
+    width: 100%;
+    height: 100% ;
+    overflow-x: hidden;
+}
+
+
+/*TAG PAGE SPECIFIC CSS*/
+
+.img-holder-right {
+    border: solid;
+    border-color: darkred;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #3e1e1e;
+    position: relative;
+    float: right;
+    font-style: italic;
+    text-align: center;
+    z-index: 0;
+}
+
+.img-holder-right p {
+    font-size: 16px;
+    color: grey;
+}
+
+.img-holder-right img {
+    background-color: #b9b9b9;
+    border-radius: 10px;
+    box-shadow: 5px 0px 10px black;
+}
+
+.img-holder-left {
+    border: solid;
+    border-color: darkred;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #3e1e1e;
+    position: relative;
+    float: left;
+    font-style: italic;
+    text-align: center;
+    z-index: 0;
+}
+
+.img-holder-left p {
+    font-size: 16px;
+    color: grey;
+}
+
+.img-holder-left img {
+    background-color: #b9b9b9;
+    border-radius: 10px;
+    box-shadow: 5px 0px 10px black;
+}   
 
 /* BRADY'S CSS STUFF DO NOT MESS WITH YOU PLONKERS*/
 
@@ -347,7 +480,6 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     margin-right: auto;
 }
     
-
 #magic-desc th {
     padding: 10px;
     border-width: 100px;
