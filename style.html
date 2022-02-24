@@ -1,8 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html class="background">
 <head>
+
 </head>
-<body>
+<body class="foreground">
+    <style>
+h1{
+    display: block;
+    text-transform: uppercase;
+
+}
+.navigation{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0px;
+        z-index: 3;
+    }
+    .background { /*Universal Class*/
+    background-image: repeating-linear-gradient(140deg, #242424, red, #242424, #ea2f01);
+}
+.foreground { /*Universal Class*/
+    border: solid;
+    border-radius: 10px;
+    border-color: darkred;
+    border-width: 5px;
+    background-image: linear-gradient(#750000, #242424);
+    margin: 10px;
+    color: #e7e7e7;
+    font-family: Lato;
+}
+.joe{
+    
+
+    font-style: italic;
+    font-family: fantasy;
+    font: bold;
+    text-decoration: line-through;
+
+}
+    </style>
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li><a href="index.html">Back to home</a></li>
+          </ul>
+          </nav>
+          </div>   
+    <h1 align="center">
+        our favorite fantasy and sci-fi worlds
+    </h1>
+    <div name="myles" >
+<p class="joe">every asks who's joe? but not hows joe?</p>
+    </div>
+
 </body>
 
 
