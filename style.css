@@ -70,6 +70,21 @@
     padding: 5px;
 }
 
+.background { /*Universal Class*/
+    background-image: repeating-linear-gradient(140deg, #242424, red, #242424, #ea2f01);
+}
+
+.foreground { /*Universal Class*/
+    border: solid;
+    border-radius: 10px;
+    border-color: darkred;
+    border-width: 5px;
+    background-image: linear-gradient(#750000, #242424);
+    margin: 10px;
+    color: #e7e7e7;
+    font-family: Lato;
+}
+
 .camback {
     background-color: rgb(159, 139, 196);
 }
@@ -217,21 +232,10 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     }
 }
 
-#brady {
-    border: solid;
-    border-radius: 10px;
-    background-color: rgb(128, 13, 13);
-}
 #myles{
     background-color: rgb(128, 13, 13);
 }
 
-.card {
-    border: solid;
-    border-color: peachpuff;
-    border-radius: 20px;
-    background-color: orange;
-}
 .mylestabimg{
     width: 33%;
     height: auto;
@@ -287,7 +291,13 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     width: 300px;
     height: 200px ;
 }
+
+/* BRADY'S CSS STUFF DO NOT MESS WITH YOU PLONKERS*/
+
 .card {
+    border: solid;
+    border-color: peachpuff;
+    border-radius: 20px;
     background-color: orange;
     display: block;
     margin-left: 50px;
@@ -319,5 +329,30 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     transition: 0.5s;
     text-align: center;
     
+}
+
+#magic-desc {
+    text-align: center;
+}
+
+#magic-desc table { 
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+
+#magic-desc th {
+    padding: 10px;
+    border-width: 100px;
+    border: solid;
+    border-color: #c45100;
+}
+
+.table-header {
+    background-color: #c45100;
+}
+
+.magic iframe {
+    margin: 50px 0px 50px 0px;
 }
 
