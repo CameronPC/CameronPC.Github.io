@@ -93,6 +93,9 @@ a {
     font-family: Lato;
 }
 
+#fullpadding { /*Prevents background from cutting into itself. Only for pages with limited content*/
+    margin: 0px 0px 260px 0px;
+}
 .camback {
     background-color: rgb(159, 139, 196);
 }
@@ -154,8 +157,6 @@ a {
         padding-top: 20px;
     }
     
-
-    
     .css-selector {
         background: linear-gradient(270deg, #42e7bd, #cc42e7);
         background-size: 400% 400%;
@@ -206,8 +207,8 @@ a {
 
 
 
-.triangle{
-    
+.triangle {
+ float: left;
  width: 40px;
  height: 40px;
  background: green;
