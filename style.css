@@ -115,6 +115,10 @@ header h1 {
     text-decoration: underline;
 }
 
+.description {
+    font-family: Cambria;
+}
+
 .camback {
     background-color: rgb(159, 139, 196);
 }
@@ -450,7 +454,11 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     background-color: #b9b9b9;
     border-radius: 10px;
     box-shadow: 5px 0px 10px black;
-}   
+}
+
+#indent {
+    margin: 0px 5px 0px 425px;
+}
 
 /* BRADY'S CSS STUFF DO NOT MESS WITH YOU PLONKERS*/
 
