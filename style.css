@@ -455,14 +455,25 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
 #preface {
+    opacity: 0%;
     color: white;
     text-align: center;
     font-family:'Baskerville Old Face';
+    animation: introduction 7s ease-in-out forwards;
 }
 
 #preface a {
-    font-style: normal;
     font-size: 40px;
+    transition: 0.3s;
+}
+
+#preface a:hover {
+    color: red;
+    transition: 0.3s;
+}
+
+#spacing {
+    padding: 0px 0px 400px 0px;
 }
 
 .card {
@@ -528,3 +539,7 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     margin: 50px 0px 50px 0px;
 }
 
+@keyframes introduction {
+    0%{opacity: 0%}
+    100%{opacity: 100%}
+}
