@@ -106,6 +106,15 @@ header h1 {
 #fullpadding { /*Prevents background from cutting into itself. Only for pages with limited content*/
     margin: 0px 0px 260px 0px;
 }
+
+.center {
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
 .camback {
     background-color: rgb(159, 139, 196);
 }
@@ -463,8 +472,9 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
 #preface a {
+    text-decoration: none;
     font-size: 40px;
-    transition: 0.3s;
+    transition: 1s;
 }
 
 #preface a:hover {
@@ -498,7 +508,7 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 .card p {
     color: black;
     padding: 10px;
-    margin: 0px 20px 0px 0px;
+    margin: 0px 20px 10px 0px;
     text-align: left;
 }
 
