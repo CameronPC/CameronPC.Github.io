@@ -93,6 +93,16 @@ a {
     font-family: Lato;
 }
 
+header {
+    text-align: center;
+    color: white;
+    font-family: 'Cambria Math';
+}
+
+header h1 {
+    font-size: 72px;
+}
+
 #fullpadding { /*Prevents background from cutting into itself. Only for pages with limited content*/
     margin: 0px 0px 260px 0px;
 }
@@ -434,6 +444,26 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }   
 
 /* BRADY'S CSS STUFF DO NOT MESS WITH YOU PLONKERS*/
+
+#veil {
+    position: absolute;
+    width: 100%;
+    height: 1500px;
+    transform: translate(-10px, -300px);
+    background-image: linear-gradient(rgb(255, 0, 0, 0), black, black, rgb(255, 0, 0, 0));
+    z-index: -1;
+}
+
+#preface {
+    color: white;
+    text-align: center;
+    font-family:'Baskerville Old Face';
+}
+
+#preface a {
+    font-style: normal;
+    font-size: 40px;
+}
 
 .card {
     border: solid;
