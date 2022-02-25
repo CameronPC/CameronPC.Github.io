@@ -270,6 +270,9 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
 .flip-box-myles {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
     background-color: transparent;
     width: 85%;
     height: 200px;
@@ -391,6 +394,15 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     width:100%;
     height:auto;
     overflow-x: hidden;
+}
+
+/*Just a lil' somethin somethin to remove the inline styling from Inosuke*/
+.inosuke{
+    text-align: center;
+    color: white;
+}
+p.inosuke{
+    font-size: 50px;
 }
 
 
