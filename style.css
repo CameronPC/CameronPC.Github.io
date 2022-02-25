@@ -141,6 +141,7 @@ header h1 {
         position: sticky;
         top: 0px;
         z-index: 3;
+        font-size: 18px;
     }
 
     .navigation nav ul {
