@@ -461,6 +461,16 @@ p.inosuke{
     margin: 0px 5px 0px 425px;
 }
 
+.outtake {
+    border: solid;
+    border-color: lightblue;
+    border-radius: 20px;
+    background-image: linear-gradient(#343434, #242424);
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
 /* BRADY'S CSS STUFF DO NOT MESS WITH YOU PLONKERS*/
 
 #veil {
