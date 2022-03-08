@@ -93,16 +93,30 @@ a {
     font-family: Lato;
 }
 
-.camback {
-    background-color: rgb(159, 139, 196);
+header {
+    text-align: center;
+    color: white;
+    font-family: 'Cambria Math';
 }
 
-.camimages {
-    max-width: 24.75%;
-    max-height: auto;
+header h1 {
+    font-size: 72px;
+}
+
+#fullpadding { /*Prevents background from cutting into itself. Only for pages with limited content*/
+    margin: 0px 0px 260px 0px;
+}
+
+.center {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;   
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.description {
+    font-family: Cambria;
 }
 
 .center {
@@ -127,6 +141,7 @@ a {
         position: sticky;
         top: 0px;
         z-index: 3;
+        font-size: 18px;
     }
 
     .navigation nav ul {
@@ -153,8 +168,6 @@ a {
         max-width: 50%;
         padding-top: 20px;
     }
-    
-
     
     .css-selector {
         background: linear-gradient(270deg, #42e7bd, #cc42e7);
@@ -206,8 +219,8 @@ a {
 
 
 
-.triangle{
-    
+.triangle {
+ float: left;
  width: 40px;
  height: 40px;
  background: green;
@@ -258,6 +271,9 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
 .flip-box-myles {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
     background-color: transparent;
     width: 390px;
     height: 200px;
@@ -381,6 +397,15 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     overflow-x: hidden;
 }
 
+/*Just a lil' somethin somethin to remove the inline styling from Inosuke*/
+.inosuke{
+    text-align: center;
+    color: white;
+}
+p.inosuke{
+    font-size: 50px;
+}
+
 
 /*TAG PAGE SPECIFIC CSS*/
 
@@ -430,9 +455,59 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     background-color: #b9b9b9;
     border-radius: 10px;
     box-shadow: 5px 0px 10px black;
-}   
+}
+
+#indent {
+    margin: 0px 5px 0px 425px;
+}
+
+.outtake {
+    border: solid;
+    border-color: lightblue;
+    border-radius: 20px;
+    background-image: linear-gradient(#343434, #242424);
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+}
 
 /* BRADY'S CSS STUFF DO NOT MESS WITH YOU PLONKERS*/
+
+#veil {
+    position: absolute;
+    width: 100%;
+    height: 1500px;
+    transform: translate(-10px, -300px);
+    background-image: linear-gradient(rgb(255, 0, 0, 0), black, black, rgb(255, 0, 0, 0));
+    z-index: -1;
+}
+
+#preface {
+    opacity: 0%;
+    color: white;
+    text-align: center;
+    font-family:'Baskerville Old Face';
+    animation: introduction 7s ease-in-out forwards;
+}
+
+#preface a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 40px;
+    transition: 1s;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+#preface a:hover {
+    color: lightblue;
+    transition: 0.3s;
+    box-shadow: 0px 0px 100px white;
+}
+
+#spacing {
+    padding: 0px 0px 400px 0px;
+}
 
 .card {
     border: solid;
@@ -456,7 +531,7 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 .card p {
     color: black;
     padding: 10px;
-    margin: 0px 20px 0px 0px;
+    margin: 0px 20px 10px 0px;
     text-align: left;
 }
 
@@ -497,3 +572,7 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     margin: 50px 0px 50px 0px;
 }
 
+@keyframes introduction {
+    0%{opacity: 0%}
+    100%{opacity: 100%}
+}

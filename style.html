@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="background">
+<html>
 <head>
 
 </head>
-<body class="foreground">
+<body>
     <style>
 h1{
     display: block;
@@ -16,28 +16,27 @@ h1{
         top: 0px;
         z-index: 3;
     }
-    .background { /*Universal Class*/
-    background-image: repeating-linear-gradient(140deg, #242424, red, #242424, #ea2f01);
-}
-.foreground { /*Universal Class*/
-    border: solid;
-    border-radius: 10px;
-    border-color: darkred;
-    border-width: 5px;
-    background-image: linear-gradient(#750000, #242424);
-    margin: 10px;
-    color: #e7e7e7;
-    font-family: Lato;
-}
+
 .joe{
     
-
+    color: black;
     font-style: italic;
     font-family: fantasy;
     font: bold;
     text-decoration: line-through;
 
 }
+
+    body {
+        background-image: linear-gradient(120deg, #57008a, #242424 50%, #ea2f01 150%);
+        color: orange;
+    }
+
+    #floating {
+        float: right;
+    }
+
+    
     </style>
     <div class="navigation">
         <nav>
@@ -47,12 +46,16 @@ h1{
           </nav>
           </div>   
     <h1 align="center">
-        our favorite fantasy and sci-fi worlds
+        This text has been aligned to center
     </h1>
     <div name="myles" >
-<p class="joe">every asks who's joe? but not hows joe?</p>
+        <p class="joe">every asks who's joe? but not hows joe? Joe has been crossed out from this dimension, and so has this text</p>
     </div>
 
+    <div>
+        <p>The background has been set into a gradient, purple to grey to red, as a way to differentiate it from the main body of the webpage. In the same body, text color has been set to orange for visibility.</p>
+        <p id="floating">How did this text get over here? Float values!</p>
+    </div>
 </body>
 
 
