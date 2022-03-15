@@ -2,11 +2,15 @@ var playerCardArray = [[0,0,"",""], [0,0,"",""], [0,0,"",""]];
 var opponentCardArray = [[0,0,"",""], [0,0,"",""], [0,0,"",""]];
 var playerHealth = 20;
 var opponentHealth = 20;
+let playerMana = 3;
+let opponentMana = playerMana;
 
 
 //display elements:
 var playerHealthDisp;
 var opponentHealthDisp;
+let playerManaDisp;
+let opponentManaDisp;
 var attackValues;
 var defenseValues;
 var titles;
@@ -14,7 +18,8 @@ var titles;
 function initGame() {
     playerHealthDisp = document.getElementById('player-health');
     opponentHealthDisp = document.getElementById('opponent-health');
-    
+    playerManaDisp = document.getElementById('player-mana');
+
     titles = document.getElementsByClassName('card-title');
     attackValues = document.getElementsByClassName('attack');
     defenseValues = document.getElementsByClassName('defense');
@@ -80,6 +85,31 @@ function cardDeathMatch() {
             updateDisplay();
         }
 }
+
+function healCard() {
+    for (let i = 0; i < defenseValues.length; i++) {
+        if (i > 2 && playerMana > 0) {
+            playerCardArray[i - 3][1] += 5;
+        }
+    }
+    playerMana -= 1;
+    playerManaDisp.innerHTML = "Player Mana: " + playerMana;
+    
+    updateDisplay();
+}
+
+function raiseAttack() {
+    for (let i = 0; i < defenseValues.length; i++) {
+        if (i > 2 && playerMana > 0) {
+            playerCardArray[i - 3][0] += 1;
+        }
+    }
+    playerMana -= 1;
+    playerManaDisp.innerHTML = "Player Mana: " + playerMana;
+
+    updateDisplay();
+}
+
 function checkGameOver() {
     if (playerHealth < 1 && opponentHealth < 1) {
         alert("It was a tie");

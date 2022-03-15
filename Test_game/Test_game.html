@@ -70,14 +70,24 @@
         <!-- end of row -->
     </div>
     <div class='container text-center health-display'>
+    <h4 id="opponent-mana" class='text-center'>Opponent Mana: 3</h4>
     <h4 id="opponent-health" class='text-center'>Opponent Health: 10</h4>
     <button id="deathmatch" onclick="cardDeathMatch()"type="button" class="btn bt-lg btn-danger">Death Match Go</button>
     <h4 id="player-health" class='text-center'>Player Health: 10</h4>
+    <h4 id="player-mana" class='text-center'>Player Mana: 3</h4>
+    <div class="row">
+        <div class="col">
+            <button id="heal" onclick="healCard()" type="button">Heal</button>
+        </div>
+        <div class="col">
+            <button onclick="raiseAttack()" type="button">Boost Attack</button>
+        </div>
     </div>
-    <div class='container-sm container'>
+    </div>
+    <div class='container-sm container '>
         <div class="row">
             <div class="col">
-                <div class="card">
+                <div class="card mycard">
                     <img src="stork.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Storky</h5>
@@ -88,12 +98,13 @@
                             <div class="col">
                                 <p class="card-text defense">Defense: 3</p>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card mycard">
                     <img src="manatee.jfif" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Manateeyee</h5>
@@ -104,12 +115,13 @@
                             <div class="col">
                                 <p class="card-text defense">Defense: 3</p>
                             </div>
+                            <button class="heal" onclick="healCard()" type="button">Heal</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card mycard">
                     <img src="girafe.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Girafey</h5>
@@ -120,6 +132,7 @@
                             <div class="col">
                                 <p class="card-text defense">Defense: 3</p>
                             </div>
+                            <button class="heal" onclick="healCard()" type="button">Heal</button>
                         </div>
 
                     </div>
