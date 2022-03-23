@@ -576,3 +576,33 @@ p.inosuke{
     0%{opacity: 0%}
     100%{opacity: 100%}
 }
+
+.gamegrid {
+	width: 606px;
+	height: 606px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gamesquare {
+	height: 200px;
+	width: 200px;
+	border: solid black 1px;
+}
+
+.bradygameimg {
+	background-image: url("index\ photos/bradboi.jpg");
+	background-size: cover;
+}
+.camgameimg {
+	background-image: url("index\ photos/camboi.jpg");
+	background-size: cover;
+}
+.rykergameimg {
+	background-image: url("index\ photos/rykerboi.jpeg");
+	background-size: cover;
+}
+.mylesgameimg {
+	background-image: url("index\ photos/PXL_20220224_013304875.jpg");
+	background-size: cover;
+}
