@@ -1,4 +1,4 @@
-const squares = document.querySelectorAll('.square')
+const squares = document.querySelectorAll('.gamesquare')
 const brady = document.querySelector('.bradygameimg')
 const cam = document.querySelector('.camgameimg')
 const ryker = document.querySelector('.rykergameimg')
@@ -11,19 +11,22 @@ let hitPosition
 let currentTime = 60
 let timerId = null
 
-let randomimage = new Array();
-  randomimage[0] = brady;
-  randomimage[1] = cam;
-  randomimage[2] = ryker;
-  randomimage[3] = myles;
+let images = ['bradygameimg',
+  'camgameimg',
+  'rykergameimg',
+  'mylesgameimg'];
 
 function randomSquare() {
+  let randomPhoto = images[Math.floor(Math.random() * images.length)]
   squares.forEach(square => {
-   squares.classList.remove('randomimage')
+    images.forEach(photo => {
+      square.classList.remove(photo)
+
+    })
   })
 
   let randomSquare = squares[Math.floor(Math.random() * 9)]
-  randomSquare.classList.add('randomimage')
+  randomSquare.classList.add(randomPhoto)
 
   hitPosition = randomSquare.id
 }
@@ -34,25 +37,27 @@ squares.forEach(square => {
       result++
       score.textContent = result
       hitPosition = null
+      const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+      document.body.style.backgroundColor = "#" + randomColor;
     }
   })
 })
 
 function moveMole() {
-  timerId = setInterval(randomSquare, 500)
+  timerId = setInterval(randomSquare, 1000)
 }
 
 moveMole()
 
 function countDown() {
- currentTime--
- timeLeft.textContent = currentTime
+  currentTime--
+  timeLeft.textContent = currentTime
 
- if (currentTime == 0) {
-   clearInterval(countDownTimerId)
-   clearInterval(timerId)
-   alert('GAME OVER! Your final score is ' + result)
- }
+  if (currentTime == 0) {
+    clearInterval(countDownTimerId)
+    clearInterval(timerId)
+    alert('GAME OVER! Your final score is ' + result)
+  }
 
 }
 

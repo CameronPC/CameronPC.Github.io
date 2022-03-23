@@ -62,7 +62,10 @@ document.addEventListener('DOMContentLoaded', () => {
             for (let i=1; i < roundedRoot; i++){
                 document.getElementById('circleGrid').innerHTML += '<div class="row" style="width:100%;" id="row-' +i +'"></div>'
                 for (let x=1; x < roundedRoot; x++){
-                    const randomColor = Math.floor(Math.random()*16777215).toString(16);
+                    let randomColor = Math.floor(Math.random()*16777215).toString(16);
+                    while(randomColor.length < 6){
+                        randomColor += 'f'
+                    }
                     document.getElementById('row-'+i).innerHTML += '<div class="col" style="border-radius: 100%; width: 30px; height: 30px; background-color: #' + randomColor + ';" id="column-' + x + '"></div>'
                     
                 }
