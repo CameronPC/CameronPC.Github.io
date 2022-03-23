@@ -1,5 +1,8 @@
 const squares = document.querySelectorAll('.square')
-const mole = document.querySelector('.mole')
+const brady = document.querySelector('.bradygameimg')
+const cam = document.querySelector('.camgameimg')
+const ryker = document.querySelector('.rykergameimg')
+const myles = document.querySelector('.mylesgameimg')
 const timeLeft = document.querySelector('#time-left')
 const score = document.querySelector('#score')
 
@@ -8,13 +11,19 @@ let hitPosition
 let currentTime = 60
 let timerId = null
 
+let randomimage = new Array();
+  randomimage[0] = brady;
+  randomimage[1] = cam;
+  randomimage[2] = ryker;
+  randomimage[3] = myles;
+
 function randomSquare() {
   squares.forEach(square => {
-    square.classList.remove('mole')
+   squares.classList.remove('randomimage')
   })
 
   let randomSquare = squares[Math.floor(Math.random() * 9)]
-  randomSquare.classList.add('mole')
+  randomSquare.classList.add('randomimage')
 
   hitPosition = randomSquare.id
 }
