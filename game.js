@@ -33,6 +33,7 @@ function randomSquare() {
   randomSquare.classList.add(randomPhoto)
 
   hitPosition = randomSquare.id
+
 }
 
 squares.forEach(square => {
@@ -44,14 +45,14 @@ squares.forEach(square => {
       const randomColor = Math.floor(Math.random() * 16777215).toString(16);
       document.body.style.backgroundColor = "#" + randomColor;
     const div = document.getElementById('gametextarea');
-      if(randomphoto == images[0]){
-        div = deathmessages[0];
-      }else if(randomPhoto ==  images[1]){
-        div = deathmessages[1];
-      }else if( randomphoto == images[2]){
-        div = deathmessages[2];
-      }else if(randomPhoto == images[3]){
-        div = deathmessages[3];
+      if(square = images[0]){
+        div.innerHTML = deathmessages[0];
+      }else if(square =  images[1]){
+        div.innerHTML = deathmessages[1];
+      }else if( square = images[2]){
+        div.innerHTML = deathmessages[2];
+      }else if(square = images[3]){
+        div.innerHTML = deathmessages[3];
       }
      
     }
