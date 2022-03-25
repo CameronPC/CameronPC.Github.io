@@ -17,6 +17,9 @@ let images = ['bradygameimg',
   'rykergameimg',
   'mylesgameimg'];
 
+  let deathmessages = ['brady has a book series', 'cam is a pog dungeon master',
+'ryker has a twitc.tv channel','myles is also a dungeon master'];
+
 function randomSquare() {
   let randomPhoto = images[Math.floor(Math.random() * images.length)]
   squares.forEach(square => {
@@ -40,14 +43,22 @@ squares.forEach(square => {
       hitPosition = null
       const randomColor = Math.floor(Math.random() * 16777215).toString(16);
       document.body.style.backgroundColor = "#" + randomColor;
-      if(images[0]){
-        document.getElementById
+    const div = document.getElementById('gametextarea');
+      if(randomphoto == images[0]){
+        div = deathmessages[0];
+      }else if(randomPhoto ==  images[1]){
+        div = deathmessages[1];
+      }else if( randomphoto == images[2]){
+        div = deathmessages[2];
+      }else if(randomPhoto == images[3]){
+        div = deathmessages[3];
       }
      
     }
    
   })
 })
+
 
 
 function moveMole() {
