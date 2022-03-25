@@ -5,6 +5,7 @@ const ryker = document.querySelector('.rykergameimg')
 const myles = document.querySelector('.mylesgameimg')
 const timeLeft = document.querySelector('#time-left')
 const score = document.querySelector('#score')
+const text = document.querySelector('.gametext')
 
 let result = 0
 let hitPosition
@@ -39,9 +40,14 @@ squares.forEach(square => {
       hitPosition = null
       const randomColor = Math.floor(Math.random() * 16777215).toString(16);
       document.body.style.backgroundColor = "#" + randomColor;
+    
+     if(hitPosition == images.values('bradygameimg')){
+        document.getElementById('.gametext').value = 'brady has written books';
+     }
     }
   })
 })
+
 
 function moveMole() {
   timerId = setInterval(randomSquare, 1000)
