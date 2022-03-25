@@ -18,7 +18,7 @@ let images = ['bradygameimg',
   'mylesgameimg'];
 
   let deathmessages = ['brady has a book series', 'cam is a pog dungeon master',
-'ryker has a twitc.tv channel','myles is also a dungeon master'];
+'ryker has a twitch.tv channel','myles is also a dungeon master'];
 
 function randomSquare() {
   let randomPhoto = images[Math.floor(Math.random() * images.length)]
@@ -45,16 +45,23 @@ squares.forEach(square => {
       const randomColor = Math.floor(Math.random() * 16777215).toString(16);
       document.body.style.backgroundColor = "#" + randomColor;
     const div = document.getElementById('gametextarea');
-      if(square = images[0]){
-        div.innerHTML = deathmessages[0];
-      }else if(square =  images[1]){
-        div.innerHTML = deathmessages[1];
-      }else if( square = images[2]){
-        div.innerHTML = deathmessages[2];
-      }else if(square = images[3]){
-        div.innerHTML = deathmessages[3];
+    let textfordiv = "";
+    console.log(square);
+      
+      if(square = images[0] ){
+       
+        textfordiv +=  deathmessages[0] + "<br>";
       }
-     
+       if(square =  images[1]  ){
+        textfordiv +=  deathmessages[1] + "<br>";
+      }
+       if( square = images[2]){
+        textfordiv +=  deathmessages[2] + "<br>";
+      }
+       if(square = images[3]){
+        textfordiv += deathmessages[3] + "<br>";
+      }
+     div.innerHTML = textfordiv;
     }
    
   })
