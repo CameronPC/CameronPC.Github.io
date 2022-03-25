@@ -40,11 +40,12 @@ squares.forEach(square => {
       hitPosition = null
       const randomColor = Math.floor(Math.random() * 16777215).toString(16);
       document.body.style.backgroundColor = "#" + randomColor;
-    
-     if(hitPosition == images.values('bradygameimg')){
-        document.getElementById('.gametext').value = 'brady has written books';
-     }
+      if(images[0]){
+        document.getElementById
+      }
+     
     }
+   
   })
 })
 
