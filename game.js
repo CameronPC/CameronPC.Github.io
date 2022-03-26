@@ -17,12 +17,15 @@ let images = ['bradygameimg',
   'rykergameimg',
   'mylesgameimg'];
 
-  let deathmessages = ['brady has a book series', 'cam is a pog dungeon master',
-'ryker has a twitch.tv channel','myles is also a dungeon master'];
+let deathMessages = ['Brady has a book series', 'Cam is a pog dungeon master',
+  'Ryker has a twitch.tv channel', 'Myles is also a dungeon master'];
+let randomPhoto = images[Math.floor(Math.random() * images.length)]
 
 function randomSquare() {
-  let randomPhoto = images[Math.floor(Math.random() * images.length)]
+  randomPhoto = images[Math.floor(Math.random() * images.length)]
+
   squares.forEach(square => {
+    square.innerHTML = ''
     images.forEach(photo => {
       square.classList.remove(photo)
 
@@ -44,26 +47,11 @@ squares.forEach(square => {
       hitPosition = null
       const randomColor = Math.floor(Math.random() * 16777215).toString(16);
       document.body.style.backgroundColor = "#" + randomColor;
-    const div = document.getElementById('gametextarea');
-    let textfordiv = "";
-    console.log(square);
-      
-      if(square = images[0] ){
-       
-        textfordiv +=  deathmessages[0] + "<br>";
-      }
-       if(square =  images[1]  ){
-        textfordiv +=  deathmessages[1] + "<br>";
-      }
-       if( square = images[2]){
-        textfordiv +=  deathmessages[2] + "<br>";
-      }
-       if(square = images[3]){
-        textfordiv += deathmessages[3] + "<br>";
-      }
-     div.innerHTML = textfordiv;
+      square.classList.remove(randomPhoto)
+      let messageToPhoto = images.indexOf(randomPhoto)
+      square.innerHTML = deathMessages[messageToPhoto]
     }
-   
+
   })
 })
 

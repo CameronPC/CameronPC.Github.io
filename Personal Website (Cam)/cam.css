@@ -47,6 +47,9 @@ p{
   }
   /* BOX STYLES*/
   .box{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
     position: relative;
     width: var(--size);
     height: var(--size);

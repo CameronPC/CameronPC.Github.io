@@ -129,13 +129,7 @@ header h1 {
     text-align: center;
   }
 
-  .navigation nav {
-    background-color: #ce3b16;
-    border-radius: 10px;
-    padding: 5px 0;
-    overflow: hidden;
-    
-}
+
 
     .navigation{
         position: -webkit-sticky;
@@ -143,24 +137,27 @@ header h1 {
         top: 0px;
         z-index: 3;
         font-size: 18px;
+        background-color: #ce3b16;
+        border-radius: 10px;
+        padding: 5px 0;
+        overflow: hidden;
     }
 
-    .navigation nav ul {
+    .navigation ul {
         text-align: center;
     }
 
-    .navigation nav li {
+    .navigation li {
         display: inline;
     }
-    .navigation nav li a {
+    .navigation  a {
         padding: 20px 30px;
         color: white;
         text-decoration: none;
     }
-    .navigation nav li a:hover {
+    .navigation  a:hover {
         background-color: rgb(128, 13, 13);
         color:white;
-        padding: 30px;
         transition: 0.5s;
         border: 3px solid white;
     }
