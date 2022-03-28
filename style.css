@@ -54,7 +54,11 @@ header h1 {
     text-decoration: underline;
 }
 
-.description {
+.title { /*For section headers and any non-descriptive text*/
+    font-family: 'Segoe UI';
+}
+
+.description { /*For large bodies of text*/
     font-family: Cambria;
 }
 
@@ -67,6 +71,7 @@ header h1 {
   .centertext {
     text-align: center;
   }
+
 
   .nav-item {
       font-size: 14px;
