@@ -1,12 +1,46 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>Whac-a-mole</title>
-<link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+    crossorigin="anonymous"></script>
+  <script src="random.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="attributes.html">Setting</a></li>
+        <li class="nav-item"><a class="nav-link" href="nested.html">Magic/Technology</a></li>
+        <li class="nav-item"><a class="nav-link" href="tags.html">Characters/Extra Details</a></li>
+        <li class="nav-item"><a class="nav-link" href="cam.html">Cam's Page</a></li>
+        <li class="nav-item"><a class="nav-link" href="myles.html">Myles' Page</a></li>
+        <li class="nav-item"><a class="nav-link" href="ryker.html">Ryker's Page</a></li>
+        <li class="nav-item"><a class="nav-link" href="brady.html">Brady's Page</a></li>
+      </ul>
+    </div>
+
+  </nav>
+  <h1 class="center">Whac-A-Bob</h1>
 
   <h2>Your score:</h2>
   <h2 id="score">0</h2>
@@ -14,18 +48,22 @@
   <h2>Time Left:</h2>
   <h2 id="time-left">60</h2>
 
-  <div class="grid">
-    <div class="square" id="1"></div>
-    <div class="square" id="2"></div>
-    <div class="square" id="3"></div>
-    <div class="square" id="4"></div>
-    <div class="square" id="5"></div>
-    <div class="square" id="6"></div>
-    <div class="square" id="7"></div>
-    <div class="square" id="8"></div>
-    <div class="square" id="9"></div>
+  <div class="gamegrid">
+    <div class="gamesquare" id="1"></div>
+    <div class="gamesquare" id="2"></div>
+    <div class="gamesquare" id="3"></div>
+    <div class="gamesquare" id="4"></div>
+    <div class="gamesquare" id="5"></div>
+    <div class="gamesquare" id="6"></div>
+    <div class="gamesquare" id="7"></div>
+    <div class="gamesquare" id="8"></div>
+    <div class="gamesquare" id="9"></div>
   </div>
 
-  <script src="app.js"></script>
+  <div class="gametextarea" id="gametextarea">
+
+  </div>
+  <script src="game.js"></script>
 </body>
+
 </html>
