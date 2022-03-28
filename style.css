@@ -521,16 +521,19 @@ p.inosuke{
 /*JavaScript Game CSS*/
 
 .gamegrid {
-	width: 606px;
-	height: 606px;
+	width: 611px;
+	height: 611px;
 	display: flex;
 	flex-wrap: wrap;
+    border: solid;
+    border-width: 5px;
 }
 
 .gamesquare {
 	height: 200px;
 	width: 200px;
 	border: solid black 1px;
+    background-color: white;
 }
 
 .bradygameimg {
@@ -548,4 +551,14 @@ p.inosuke{
 .mylesgameimg {
 	background-image: url("index photos/PXL_20220224_013304875.jpg");
 	background-size: cover;
+}
+
+#game-foreground {
+    border: solid;
+    border-radius: 10px;
+    border-color: darkred;
+    border-width: 5px;
+    background-color: #242424;
+    margin: 10px;
+    color: #e7e7e7;
 }

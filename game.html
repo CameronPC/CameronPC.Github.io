@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="container-fluid">
+<body class="container-fluid background">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.html">Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -40,30 +40,47 @@
     </div>
 
   </nav>
-  <h1 class="center">Whac-A-Bob</h1>
 
-  <h2>Your score:</h2>
-  <h2 id="score">0</h2>
+    <section>
+        <div class="centertext title" id="game-foreground">
+            <h1>Whac-A-Bob</h1>
 
-  <h2>Time Left:</h2>
-  <h2 id="time-left">60</h2>
+            <h2>Your score:</h2>
+            <h2 id="score">0</h2>
 
-  <div class="gamegrid">
-    <div class="gamesquare" id="1"></div>
-    <div class="gamesquare" id="2"></div>
-    <div class="gamesquare" id="3"></div>
-    <div class="gamesquare" id="4"></div>
-    <div class="gamesquare" id="5"></div>
-    <div class="gamesquare" id="6"></div>
-    <div class="gamesquare" id="7"></div>
-    <div class="gamesquare" id="8"></div>
-    <div class="gamesquare" id="9"></div>
-  </div>
+            <h2>Time Left:</h2>
+            <h2 id="time-left">60</h2>
 
-  <div class="gametextarea" id="gametextarea">
+            <div class="gamegrid center border-primary rounded">
+                <div class="gamesquare" id="1"></div>
+                <div class="gamesquare" id="2"></div>
+                <div class="gamesquare" id="3"></div>
+                <div class="gamesquare" id="4"></div>
+                <div class="gamesquare" id="5"></div>
+                <div class="gamesquare" id="6"></div>
+                <div class="gamesquare" id="7"></div>
+                <div class="gamesquare" id="8"></div>
+                <div class="gamesquare" id="9"></div>
+            </div>
 
-  </div>
-  <script src="game.js"></script>
+            <div class="gametextarea" id="gametextarea">
+
+            </div>
+
+            <div class="row m-5">
+                <div class="col-4"></div>
+                <div class="col-2 border-primary rounded">
+                    <button id="startbutton" class="btn btn-success center mb-3">Start Game</button>
+                </div>
+                <div class="col-2 border-primary rounded">
+                    <button id="resetbutton" class="btn btn-outline-warning center">Reset Game</button>
+                </div>
+                <div class="col-4"></div>
+            </div>
+            <script src="game.js"></script>
+        </div>
+    </section>
+  
 </body>
 
 </html>
