@@ -80,7 +80,6 @@ function beginGame() {
                         score.textContent = result
                         hitPosition = null
                         const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-                        document.getElementById("game-foreground").style.backgroundColor = "#" + randomColor;
                         square.classList.remove(randomPhoto)
                         let messageToPhoto = images.indexOf(randomPhoto)
                         square.innerHTML = deathMessages[messageToPhoto]
