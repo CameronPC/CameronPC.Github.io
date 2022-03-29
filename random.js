@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     document.getElementById('colorChange').addEventListener('click', () => {
-        switch (document.body.style.backgroundColor) {
-            case 'white':
-                document.body.style.backgroundColor = 'black'
-                document.body.style.color = 'white'
+        switch (document.getElementById('panel').style.backgroundImage) {
+            case 'linear-gradient(white, black)':
+                document.getElementById('panel').style.backgroundImage = 'linear-gradient(black, white)'
+                document.getElementById('panel').style.color = 'white'
                 document.getElementById('navbar').classList.remove('navbar-light')
                 document.getElementById('navbar').classList.remove('bg-light')
                 document.getElementById('navbar').classList.add('navbar-dark')
@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.getElementById('dropdown3').classList.add('bg-dark')
                 console.log(document.body.style.backgroundColor)
                 break;
-            case 'black':
-                document.body.style.backgroundColor = 'white'
-                document.body.style.color = 'black'
+            case 'linear-gradient(black, white)':
+                document.getElementById('panel').style.backgroundImage = 'linear-gradient(white, black)'
+                document.getElementById('panel').style.color = 'black'
                 document.getElementById('navbar').classList.remove('navbar-dark')
                 document.getElementById('navbar').classList.remove('bg-dark')
                 document.getElementById('navbar').classList.add('navbar-light')
@@ -35,8 +35,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.getElementById('dropdown2').classList.add('bg-light')
                 document.getElementById('dropdown3').classList.remove('bg-dark')
                 document.getElementById('dropdown3').classList.add('bg-light')
-                console.log(document.body.style.backgroundColor)
+                
                 break;
+            default:
+                document.getElementById('panel').style.backgroundImage = 'linear-gradient(black, white)'
+                document.getElementById('panel').style.color = 'black'
+                console.log(document.getElementById('panel').style.backgroundImage)
         }
 
     })
