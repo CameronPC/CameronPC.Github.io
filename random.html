@@ -23,7 +23,7 @@
 </head>
 
 <body class="background">
-        <nav class="navbar navbar-expand-xl navbar-dark navigation container-fluid">
+        <nav id="navbar" class="navbar navbar-expand-xl navbar-dark  navigation container-fluid">
             <a class="navbar-brand nav-link" href="index.html">Home</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,22 +32,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav navbar-nav mr-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle navigation active" href="#" id="worldbuildingDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="#" id="worldbuildingDropdown" role="button"
                            data-toggle="dropdown" aria-expanded="false">
                             Worldbuilding
                         </a>
-                        <div class="dropdown-menu navigation" aria-labelledby="worldbuildingDropdown">
+                        <div id="dropdown1" class="dropdown-menu navigation" aria-labelledby="worldbuildingDropdown">
                             <a class="dropdown-item nav-link" href="attributes.html">Setting</a>
                             <a class="dropdown-item nav-link" href="nested.html">Magic/Technology</a>
                             <a class="dropdown-item nav-link" href="tags.html">Characters/Extra Details</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle navigation" href="#" id="personalDropdown" role="button"
+                        <a class="nav-link dropdown-toggle " href="#" id="personalDropdown" role="button"
                            data-toggle="dropdown" aria-expanded="false">
                             Personal Pages
                         </a>
-                        <div class="dropdown-menu navigation" aria-labelledby="personalDropdown">
+                        <div id="dropdown2" class="dropdown-menu navigation" aria-labelledby="personalDropdown">
                             <a class="dropdown-item nav-link" href="cam.html">Cam</a>
                             <a class="dropdown-item nav-link" href="myles.html">Myles</a>
                             <a class="dropdown-item nav-link" href="ryker.html">Ryker</a>
@@ -55,11 +55,11 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle navigation" href="#" id="jsDropdown" role="button"
+                        <a class="nav-link dropdown-toggle active" href="#" id="jsDropdown" role="button"
                            data-toggle="dropdown" aria-expanded="false">
                             Javascript Pages
                         </a>
-                        <div class="dropdown-menu navigation" aria-labelledby="jsDropdown">
+                        <div id='dropdown3' class="dropdown-menu navigation" aria-labelledby="jsDropdown">
                             <a class="dropdown-item nav-link" href="game.html">Whac-A-Bob</a>
                             <a class="dropdown-item nav-link disabled" href="random.html">Random JS Page</a>
                         </div>
@@ -98,7 +98,7 @@
         </div>
 
         <div id="randomCreate">
-            <h2>Random Circles: Give another upper and lower range and you'll get a random number of colorful circles!
+            <h2>Random Ovals: Give another upper and lower range and you'll get a random number of colorful ovals!
             </h2>
             <label>First Number:</label>
             <input type="text" id="firstCircleNum">
@@ -106,7 +106,7 @@
             <label>Second Number:</label>
             <input type="text" id="secondCircleNum">
             <br>
-            <button id="circleGenerator">Create the circles!</button>
+            <button id="circleGenerator">Create the ovals!</button>
             <div class="container" id="circleGrid">
 
             </div>

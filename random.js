@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('colorChange').addEventListener('click', () => {
         switch (document.getElementById('panel').style.backgroundImage) {
-            case 'linear-gradient(white, black)':
-                document.getElementById('panel').style.backgroundImage = 'linear-gradient(black, white)'
+            case 'linear-gradient(white, white)':
+                document.getElementById('panel').style.backgroundImage = 'linear-gradient(black, black)'
                 document.getElementById('panel').style.color = 'white'
                 document.getElementById('navbar').classList.remove('navbar-light')
                 document.getElementById('navbar').classList.remove('bg-light')
@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.getElementById('dropdown3').classList.add('bg-dark')
                 console.log(document.body.style.backgroundColor)
                 break;
-            case 'linear-gradient(black, white)':
-                document.getElementById('panel').style.backgroundImage = 'linear-gradient(white, black)'
+            case 'linear-gradient(black, black)':
+                document.getElementById('panel').style.backgroundImage = 'linear-gradient(white, white)'
                 document.getElementById('panel').style.color = 'black'
                 document.getElementById('navbar').classList.remove('navbar-dark')
                 document.getElementById('navbar').classList.remove('bg-dark')
@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 break;
             default:
-                document.getElementById('panel').style.backgroundImage = 'linear-gradient(black, white)'
-                document.getElementById('panel').style.color = 'black'
+                document.getElementById('panel').style.backgroundImage = 'linear-gradient(black, black)'
+                document.getElementById('panel').style.color = 'white'
                 console.log(document.getElementById('panel').style.backgroundImage)
         }
 
