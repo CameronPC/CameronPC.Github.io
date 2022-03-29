@@ -41,7 +41,7 @@ header h1 {
 }
 
 .footer {
-    width: 100%;
+    width: auto;
     height: 5rem;
     background-color: #242424;
     color: grey;
