@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="background container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-dark navigation">
+<body class="background">
+    <nav class="navbar navbar-expand-lg navbar-dark navigation container-fluid">
         <a class="navbar-brand active" href="nested.html">Magic/Technology</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +54,7 @@
         <h1>Magic and Technology</h1>
         <h2>Memorable parts of worldbuilding</h2>
     </header>
-    <main>
+    <main class="container-fluid">
         <article class="foreground" id="description">
             <div class="row">
                 <div class="col-12">
@@ -119,10 +119,12 @@
             </section>
         </article>
     </main>
-    <footer class="footer outtake" style="color:white;">
-        <p>Copyright Bob the Worldbuilders 2022. Failure to comply to the terms and services means that a very angry
+    <footer class="footer container-fixed">
+        <p class="centertext pt-5">
+            Copyright Bob the Worldbuilders 2022. Failure to comply to the terms of service means that a very angry
             Cameron will be dispatched to your house. And remember, every second not spent running is a second he gets
-            closer.</p>
+            closer.
+        </p>
     </footer>
 </body>
 

@@ -15,6 +15,7 @@ let hitPosition
 let currentTime = 60
 let timerId = null
 let gameStart = false;
+let countDownTimerId
 
 let images = ['bradygameimg',
   'camgameimg',
@@ -28,9 +29,12 @@ let randomPhoto = images[Math.floor(Math.random() * images.length)]
 start.addEventListener('click', () => {
     if (gameStart != true) {
         console.log("started!")
+        clearInterval(countDownTimerId)
+        clearInterval(timerId)
         gameStart = true
         beginGame()
     }
+    
 })
 
 reset.addEventListener('click', () => {
@@ -47,7 +51,8 @@ reset.addEventListener('click', () => {
 
         })
     })
-
+    clearInterval(countDownTimerId)
+    clearInterval(timerId)
     beginGame()
 })
 
@@ -80,6 +85,8 @@ function beginGame() {
                         score.textContent = result
                         hitPosition = null
                         const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+                        document.body.style.backgroundColor = "#" + randomColor;
+                        document.getElementById("game-foreground").style.backgroundColor = "#" + randomColor;
                         square.classList.remove(randomPhoto)
                         let messageToPhoto = images.indexOf(randomPhoto)
                         square.innerHTML = deathMessages[messageToPhoto]
@@ -88,7 +95,7 @@ function beginGame() {
                 })
             })
         }
-        
+
 
 
         if (gameStart == true) {
@@ -98,9 +105,9 @@ function beginGame() {
 
             moveMole()
         }
-        
 
-        
+
+
 
         function countDown() {
             if (gameStart == true) {
@@ -118,7 +125,9 @@ function beginGame() {
             }
         }
 
-        let countDownTimerId = setInterval(countDown, 1000)
+        countDownTimerId = setInterval(countDown, 1000)
+    } else {
+        return;
     }
 }
  
