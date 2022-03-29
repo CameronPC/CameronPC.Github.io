@@ -252,8 +252,8 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   
   /* Style the back side */
   .flip-box-back-myles {
-    background-color: dodgerblue;
-    color: white;
+    background-color: limegreen;
+    color: pink;
     transform: rotateY(180deg);
     
   }
