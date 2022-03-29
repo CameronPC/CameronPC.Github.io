@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 </head>
+
 <body>
     <style>
-h1{
-    display: block;
-    text-transform: uppercase;
+        h1 {
+            display: block;
+            text-transform: uppercase;
 
-}
-.navigation{
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0px;
-        z-index: 3;
-    }
+        }
 
-.joe{
-    
-    color: black;
-    font-style: italic;
-    font-family: fantasy;
-    font: bold;
-    text-decoration: line-through;
+        .navigation {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0px;
+            z-index: 3;
+        }
 
-}
+        .joe {
 
-    body {
-        background-image: linear-gradient(120deg, #57008a, #242424 50%, #ea2f01 150%);
-        color: orange;
-    }
+            color: black;
+            font-style: italic;
+            font-family: fantasy;
+            font: bold;
+            text-decoration: line-through;
 
-    #floating {
-        float: right;
-    }
+        }
 
-    
+        body {
+            color: orange;
+        }
+
+        #floating {
+            float: right;
+        }
     </style>
     <div class="navigation">
         <nav>
             <ul>
-                <li><a href="index.html" style="color:white;">While this link takes you back to the landing page, inline styling was also used to turn the text color white.</a></li>
-          </ul>
-          </nav>
-          </div>   
-    <h1 align="center">
+                <li><a href="index.html" style="color:white;">While this link takes you back to the landing page, inline
+                        styling was also used to turn the text color white.</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1 id="h1" align="center">
         This text has been aligned to center
     </h1>
-    <div name="myles" >
-        <p class="joe">every asks who's joe? but not hows joe? Joe has been crossed out from this dimension, and so has this text</p>
+    <div name="myles">
+        <p class="joe">every asks who's joe? but not hows joe? Joe has been crossed out from this dimension, and so has
+            this text</p>
     </div>
 
     <div>
-        <p>The background has been set into a gradient, purple to grey to red, as a way to differentiate it from the main body of the webpage. In the same body, text color has been set to orange for visibility.</p>
+        <p>The background has been set into a gradient, purple to grey to red, as a way to differentiate it from the
+            main body of the webpage. In the same body, text color has been set to orange for visibility.</p>
         <p id="floating">How did this text get over here? Float values!</p>
     </div>
     <footer class="footer container-fixed">
@@ -63,7 +66,14 @@ h1{
             closer.</p>
     </footer>
 </body>
+<script>
+    document.getElementById('h1').innerHTML = 'This says something different than what it used to thanks to javascript.'
 
+    const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+    document.body.style.backgroundColor = "#" + randomColor;
+
+    document.getElementById('floating').style.fontSize = '20px';
+</script>
 
 
 </html>
