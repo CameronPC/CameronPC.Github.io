@@ -20,35 +20,50 @@
 </head>
 
 <body class="background">
-    <nav class="navbar navbar-expand-lg navbar-dark navigation  container-fluid">
+    <nav class="navbar navbar-expand-xl navbar-dark navigation  container-fluid">
         <a href="style.html">
             <div class="triangle"></div>
         </a>
-        <a class="navbar-brand active" href="index.html">Home</a>
+        <a class="navbar-brand nav-link disabled" href="index.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav navbar-nav mr-auto">
-
-                <li class="nav-item"><a href="attributes.html">Setting</a></li>
-                <br>
-                <li class="nav-item"><a href="nested.html">Magic/Technology</a></li>
-                <br>
-                <li class="nav-item"><a href="tags.html">Characters/Extra Details</a></li>
-                <br>
-                <li class="nav-item"><a href="cam.html">Cam's Page</a></li>
-                <br>
-                <li class="nav-item"><a href="myles.html">Myles' Page</a></li>
-                <br>
-                <li class="nav-item"><a href="ryker.html">Ryker's Page</a></li>
-                <br>
-                <li class="nav-item"><a href="brady.html">Brady's Page</a></li>
-                <br>
-                <li class="nav-item"><a href="game.html">Whac-A-Bob Game</a></li>
-                <br>
-                <li class="nav-item"><a href="random.html">Random JS page</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle navigation" href="#" id="worldbuildingDropdown" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Worldbuilding
+                    </a>
+                    <div class="dropdown-menu navigation" aria-labelledby="worldbuildingDropdown">
+                        <a class="dropdown-item nav-link" href="attributes.html">Setting</a>
+                        <a class="dropdown-item nav-link" href="nested.html">Magic/Technology</a>
+                        <a class="dropdown-item nav-link" href="tags.html">Characters/Extra Details</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle navigation" href="#" id="personalDropdown" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Personal Pages
+                    </a>
+                    <div class="dropdown-menu navigation" aria-labelledby="personalDropdown">
+                        <a class="dropdown-item nav-link" href="cam.html">Cam</a>
+                        <a class="dropdown-item nav-link" href="myles.html">Myles</a>
+                        <a class="dropdown-item nav-link" href="ryker.html">Ryker</a>
+                        <a class="dropdown-item nav-link" href="brady.html">Brady</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle navigation" href="#" id="jsDropdown" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Javascript Pages
+                    </a>
+                    <div class="dropdown-menu navigation" aria-labelledby="jsDropdown">
+                        <a class="dropdown-item nav-link" href="game.html">Whac-A-Bob</a>
+                        <a class="dropdown-item nav-link" href="random.html">Random JS Page</a>
+                    </div>
+                </li>
 
             </ul>
         </div>
@@ -133,7 +148,8 @@
     </div>
 
     <footer class="footer container-fixed">
-        <p class="centertext pt-5">Copyright Bob the Worldbuilders 2022. Failure to comply to the terms of service means that a very angry
+        <p class="centertext pt-5">Copyright Bob the Worldbuilders 2022. Failure to comply to the terms of service means
+            that a very angry
             Cameron will be dispatched to your house. And remember, every second not spent running is a second he gets
             closer.</p>
     </footer>

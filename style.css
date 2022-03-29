@@ -79,28 +79,23 @@ header h1 {
 
 
     .navigation{
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0px;
-        z-index: 3;
         font-size: 18px;
         background-color: #ce3b16;
         border-radius: 10px;
-        padding: 5px 0;
-        overflow: hidden;
+        
     }
 
-    .navigation ul {
-        text-align: center;
-    }
-
-    .navigation li {
-        display: inline;
-    }
     .navigation  a {
         padding: 20px 30px;
         color: white;
         text-decoration: none;
+    }
+
+    .dropdown-menu.navigation a:hover, .navbar-brand:hover{
+        background-color:#750000;
+        transition: 0.5s;
+        color:white;
+        overflow:hidden;
     }
 
     #Kuntz-img{

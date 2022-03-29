@@ -17,70 +17,101 @@
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
         crossorigin="anonymous"></script>
     <script src="random.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">Home</a>
+        <nav class="navbar navbar-expand-xl navbar-light bg-light  container-fluid" id="navbar">
+            <a class="navbar-brand nav-link" href="index.html">Home</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="attributes.html">Setting</a></li>
-                    <li class="nav-item"><a class="nav-link" href="nested.html">Magic/Technology</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tags.html">Characters/Extra Details</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cam.html">Cam's Page</a></li>
-                    <li class="nav-item"><a class="nav-link" href="myles.html">Myles' Page</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ryker.html">Ryker's Page</a></li>
-                    <li class="nav-item"><a class="nav-link" href="brady.html">Brady's Page</a></li>
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="worldbuildingDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Worldbuilding
+                        </a>
+                        <div id="dropdown1" class="dropdown-menu bg-light" aria-labelledby="worldbuildingDropdown">
+                            <a class="dropdown-item nav-link" href="attributes.html">Setting</a>
+                            <a class="dropdown-item nav-link" href="nested.html">Magic/Technology</a>
+                            <a class="dropdown-item nav-link" href="tags.html">Characters/Extra Details</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="personalDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Personal Pages
+                        </a>
+                        <div id="dropdown2" class="dropdown-menu bg-light" aria-labelledby="personalDropdown">
+                            <a class="dropdown-item nav-link" href="cam.html">Cam</a>
+                            <a class="dropdown-item nav-link" href="myles.html">Myles</a>
+                            <a class="dropdown-item nav-link" href="ryker.html">Ryker</a>
+                            <a class="dropdown-item nav-link" href="brady.html">Brady</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="jsDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Javascript Pages
+                        </a>
+                        <div id="dropdown3" class="dropdown-menu bg-light" aria-labelledby="jsDropdown">
+                            <a class="dropdown-item nav-link" href="game.html">Whac-A-Bob</a>
+                            <a class="dropdown-item nav-link disabled" href="random.html">Random JS Page</a>
+                        </div>
+                    </li>
+        
                 </ul>
+                
             </div>
-
         </nav>
     </div>
-    <div id="randomHTML">
-        <p id="changeText">This button changes and html element!
-        </p>
-        <button id="textChange">Change the text above!</button>
-    </div>
-
-    <div id="randomCSS">
-        <p id="changeCSS">This button changes a css property. I change colors!</p>
-        <button id="colorChange">Change some colors!</button>
-    </div>
-
-    <div id="submission">
-        <p>Enter your name in the text box!</p>
-        <input type="text" id="submissionText">
-        <button id="submitBtn">Submit</button>
-    </div>
-    <div id="randomNumber">
-        <h2>Random Number Generator: Give an upper and lower range and you'll get a random number!</h2>
-        <label>First Number:</label>
-        <input type="text" id="firstNum">
-        <br>
-        <label>Second Number:</label>
-        <input type="text" id="secondNum">
-        <br>
-        <button id="numberGenerator">Generate a random number!</button>
-    </div>
-
-    <div id="randomCreate">
-        <h2>Random Circles: Give another upper and lower range and you'll get a random number of colorful circles!</h2>
-        <label>First Number:</label>
-        <input type="text" id="firstCircleNum">
-        <br>
-        <label>Second Number:</label>
-        <input type="text" id="secondCircleNum">
-        <br>
-        <button id="circleGenerator">Create the circles!</button>
-        <div class="container" id="circleGrid">
-
+    <main>
+        <div id="randomHTML">
+            <p id="changeText">This button changes and html element!
+            </p>
+            <button id="textChange">Change the text above!</button>
         </div>
-    </div>
+
+        <div id="randomCSS">
+            <p id="changeCSS">This button changes a css property. I change colors!</p>
+            <button id="colorChange">Change some colors!</button>
+        </div>
+
+        <div id="submission">
+            <p>Enter your name in the text box!</p>
+            <input type="text" id="submissionText">
+            <button id="submitBtn">Submit</button>
+        </div>
+        <div id="randomNumber">
+            <h2>Random Number Generator: Give an upper and lower range and you'll get a random number!</h2>
+            <label>First Number:</label>
+            <input type="text" id="firstNum">
+            <br>
+            <label>Second Number:</label>
+            <input type="text" id="secondNum">
+            <br>
+            <button id="numberGenerator">Generate a random number!</button>
+        </div>
+
+        <div id="randomCreate">
+            <h2>Random Circles: Give another upper and lower range and you'll get a random number of colorful circles!
+            </h2>
+            <label>First Number:</label>
+            <input type="text" id="firstCircleNum">
+            <br>
+            <label>Second Number:</label>
+            <input type="text" id="secondCircleNum">
+            <br>
+            <button id="circleGenerator">Create the circles!</button>
+            <div class="container" id="circleGrid">
+
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
