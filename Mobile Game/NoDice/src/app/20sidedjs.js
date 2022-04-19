@@ -1,3 +1,6 @@
+
+
+
 var $die = $('.die'),
     sides = 20,
     initialSide = 1,
