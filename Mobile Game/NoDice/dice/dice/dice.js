@@ -290,56 +290,56 @@
     this.dice_inertia = { 'd4': 5, 'd6': 13, 'd8': 10, 'd10': 9, 'd12': 8, 'd20': 6, 'd100': 9 };
 
     this.scale = 50;
-document.getElementById('d4').addEventListener('click', ()=>
+
     this.create_d4 = function() {
         if (!this.d4_geometry) this.d4_geometry = this.create_d4_geometry(this.scale * 1.2);
         if (!this.d4_material) this.d4_material = new THREE.MeshFaceMaterial(
                 this.create_d4_materials(this.scale / 2, this.scale * 2, d4_labels[0]));
         return new THREE.Mesh(this.d4_geometry, this.d4_material);
-    }
-); document.getElementById('d6').addEventListener('click',()=>
+        }
+ 
     this.create_d6 = function() {
         if (!this.d6_geometry) this.d6_geometry = this.create_d6_geometry(this.scale * 0.9);
         if (!this.dice_material) this.dice_material = new THREE.MeshFaceMaterial(
                 this.create_dice_materials(this.standart_d20_dice_face_labels, this.scale / 2, 1.0));
         return new THREE.Mesh(this.d6_geometry, this.dice_material);
     }
-); document.getElementById('d8').addEventListener('click', ()=>
+
     this.create_d8 = function() {
         if (!this.d8_geometry) this.d8_geometry = this.create_d8_geometry(this.scale);
         if (!this.dice_material) this.dice_material = new THREE.MeshFaceMaterial(
                 this.create_dice_materials(this.standart_d20_dice_face_labels, this.scale / 2, 1.2));
         return new THREE.Mesh(this.d8_geometry, this.dice_material);
     }
-); document.getElementById('d10').addEventListener('click', ()=>
+
     this.create_d10 = function() {
         if (!this.d10_geometry) this.d10_geometry = this.create_d10_geometry(this.scale * 0.9);
         if (!this.dice_material) this.dice_material = new THREE.MeshFaceMaterial(
                 this.create_dice_materials(this.standart_d20_dice_face_labels, this.scale / 2, 1.0));
         return new THREE.Mesh(this.d10_geometry, this.dice_material);
     }
-); document.getElementById('d12').addEventListener('click', () => 
+ 
     this.create_d12 = function() {
         if (!this.d12_geometry) this.d12_geometry = this.create_d12_geometry(this.scale * 0.9);
         if (!this.dice_material) this.dice_material = new THREE.MeshFaceMaterial(
                 this.create_dice_materials(this.standart_d20_dice_face_labels, this.scale / 2, 1.0));
         return new THREE.Mesh(this.d12_geometry, this.dice_material);
     }
-); document.getElementById('d20').addEventListener('click', ()=>
+
     this.create_d20 = function() {
         if (!this.d20_geometry) this.d20_geometry = this.create_d20_geometry(this.scale);
         if (!this.dice_material) this.dice_material = new THREE.MeshFaceMaterial(
                 this.create_dice_materials(this.standart_d20_dice_face_labels, this.scale / 2, 1.0));
         return new THREE.Mesh(this.d20_geometry, this.dice_material);
     }
-); document.getElementById('d100').addEventListener('click', ()=>
+
     this.create_d100 = function() {
         if (!this.d10_geometry) this.d10_geometry = this.create_d10_geometry(this.scale * 0.9);
         if (!this.d100_material) this.d100_material = new THREE.MeshFaceMaterial(
                 this.create_dice_materials(this.standart_d100_dice_face_labels, this.scale / 2, 1.5));
         return new THREE.Mesh(this.d10_geometry, this.d100_material);
     }
-);
+
     this.parse_notation = function(notation) {
         var no = notation.split('@');
         var dr0 = /\s*(\d*)([a-z]+)(\d+)(\s*(\+|\-)\s*(\d+)){0,1}\s*(\+|$)/gi;
