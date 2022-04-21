@@ -1,6 +1,6 @@
 "use strict";
 
-(function(d6js) {
+(function(dice) {
 
     var random_storage = [];
     this.use_true_random = true;
