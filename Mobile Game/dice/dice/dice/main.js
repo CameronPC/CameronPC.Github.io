@@ -14,8 +14,6 @@ function dice_initialize(container) {
 
     $t.dice.use_true_random = false;
 
-
-
     function on_set_change(ev) { set.style.width = set.value.length + 3 + 'ex'; }
     $t.bind(set, 'keyup', on_set_change);
     $t.bind(set, 'mousedown', function(ev) { ev.stopPropagation(); });
