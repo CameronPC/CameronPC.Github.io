@@ -26,10 +26,10 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 .background {
-  --ion-background-color: url("Images/Parchment.jpg");
-  background-position: inherit;
-  width: 100%;
+  background-image: url("Images/Parchment.jpg");
+  background-attachment: fixed;
   background-size: cover;
+  height: 100%;
 }
 
 * {
