@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="keywords" content="DnD, dangeon and dragons, roleplay, dice, roller, 3D, RPG, wargame"/>
+<meta name="description" content="Online 3D dice roller"/>
+<title>teal 3d dice roller</title>
+
+<style type="text/css">@import "../main.css";</style>
+<style type="text/css">@import "dice.css";</style>
+
+</head>
+
+<body style="margin: 0">
+    <div id="control_panel" class="control_panel">
+        <h6><img src="../favicon.ico" style="vertical-align: middle"></img> <a href="..">teal</a> dice</h6>
+        <p id="loading_text">Loading libraries, please wait a bit...</p>
+        <p id="info_text"><a href="http://www.teall.info/2014/01/online-3d-dice-roller.html">More info and help</a></p>
+        <p id="info_text"><a href="/mdice">Multiplayer version</a></p>
+    </div>
+    <div id="info_div" style="display: none">
+        <div class="center_field">
+            <span id="label"></span>
+        </div>
+        <div class="center_field">
+            <div class="bottom_field">
+                <span id="labelhelp">click to continue or tap and drag again</span>
+            </div>
+        </div>
+    </div>
+    <div id="selector_div" style="display: none">
+        <div class="center_field">
+            <div id="sethelp">
+                choose your dice set by clicking the dices or by direct input of notation,<br/>
+                tap and drag on free space of screen or hit throw button to roll
+            </div>
+        </div>
+        <div class="center_field">
+            <input type="text" id="set" value="4d6"></input><br/>
+            <button id="clear">clear</button>
+            <button style="margin-left: 0.6em" id="throw">throw</button>
+        </div>
+    </div>
+    <div id="canvas"></div>
+
+    <footer>
+        <button id="d4">d4</button>
+        <button id="d6" >d6</button>
+        <button id="d8">d8</button>
+        <button id="d10">d10</button>
+        <button id="d12">d12</button>
+        <button id="d20">d20</button>
+        <button id="d100">d100</button>
+    </footer>
+
+ 
+
+
+
+
+
+
+
+    <script src="../libs/three.min.js"></script>
+    <script src="../libs/cannon.min.js"></script>
+    <!--script type="text/javascript" src="https://drive.google.com/uc?id=0ByGeV2TiysmOelhLSnlUQ3ZMc2M"></script>
+ 
+ 
+        <script type="text/javascript" src="https://drive.google.com/uc?id=0ByGeV2TiysmOczhfWW90OEV0dmM"></script-->
+
+            <script type="text/javascript" src="../teal.js"></script>
+
+<script id="d4script"  type="text/javascript" >
+var d4place = document.getElementById('d4');
+
+d4place.onclick = function(){
+    var d4script = document.createElement("script");
+    d4script.type = "text/javascript";
+    d4script.src = "d4js.js";
+    document.getElementsByTagName("body")[0].appendChild(d4script);
+    return false;
+}
+
+</script>
+<script id="d6script" type="text/javascript">
+var d6place = document.getElementById('d6');
+
+d6place.onclick = function(){
+    var d6script = document.createElement("script");
+    d6script.type = "text/javascript";
+    d6script.src = "d6js.js";
+    document.getElementsByTagName("body")[0].appendChild(d6script);
+    return false;
+}
+</script>
+<script id="d8script" type="text/javascript">
+    var d8place = document.getElementById('d8');
+    
+    d8place.onclick = function(){
+        var d8script = document.createElement("script");
+        d8script.type = "text/javascript";
+        d8script.src = "d8js.js";
+        document.getElementsByTagName("body")[0].appendChild(d8script);
+        return false;
+    }
+    </script>
+<script id="d10script" type="text/javascript">
+    var d10place = document.getElementById('d10');
+    
+    d10place.onclick = function(){
+        var d10script = document.createElement("script");
+        d10script.type = "text/javascript";
+        d10script.src = "d10js.js";
+        document.getElementsByTagName("body")[0].appendChild(d10script);
+        return false;
+    }
+    </script>
+
+<script id="d12script" type="text/javascript">
+    var d12place = document.getElementById('d12');
+    
+    d12place.onclick = function(){
+        var d12script = document.createElement("script");
+        d12script.type = "text/javascript";
+        d12script.src = "d12js.js";
+        document.getElementsByTagName("body")[0].appendChild(d12script);
+        return false;
+    }
+    </script>
+
+<script id="d20script" type="text/javascript">
+    var d20place = document.getElementById('d20');
+    
+    d20place.onclick = function(){
+        var d20script = document.createElement("script");
+        d20script.type = "text/javascript";
+        d20script.src = "d20js.js";
+        document.getElementsByTagName("body")[0].appendChild(d20script);
+        return false;
+    }
+    </script>
+
+<script id="d100script" type="text/javascript">
+    var d100place = document.getElementById('d100');
+    
+    d100place.onclick = function(){
+        var d100script = document.createElement("script");
+        d100script.type = "text/javascript";
+        d100script.src = "d100js.js";
+        document.getElementsByTagName("body")[0].appendChild(d100script);
+        return false;
+    }
+    </script>
+<script  type="text/javascript" src="main.js"></script>
+
+   
+    <script type="text/javascript" defer="defer">
+            dice_initialize(document.body);
+    </script>
+   
+    
+</body>
+</html>
