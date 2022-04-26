@@ -117,9 +117,7 @@
   font-family: Impact;
   font-size: 40px;
   box-shadow: 0px 15px 0px black;
-  align-content: center;
   text-align: center;
-  justify-content: center;
   margin: auto;
 }
 
@@ -135,4 +133,14 @@
   box-shadow: 0px 1px 0px black;
   transform: translateY(14px);
   transition: 0.1s;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    font-size: 150%;
+}
+
+#center {
+    padding-top: 40%;
 }
