@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class Tab1Page {
   public async rollADice(faces){
     let randomNum = Math.floor(Math.random()*faces) + 1;
+    console.log(randomNum);
     document.getElementById('diceResult').innerHTML = randomNum.toString();
   }
   constructor() {}
