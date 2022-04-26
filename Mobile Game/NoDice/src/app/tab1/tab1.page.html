@@ -46,7 +46,9 @@
     </ion-toolbar>
   </ion-header>
   <div class="background">
-
+    <div class="container">
+      <p id="diceResult"></p>
+    </div>
   </div>
   
 
@@ -62,7 +64,7 @@
 
 
       <ion-col>
-        <ion-button fill="clear" id="d4">
+        <ion-button (click)="rollADice(4)" fill="clear" id="d4">
         </ion-button>
       </ion-col>
 

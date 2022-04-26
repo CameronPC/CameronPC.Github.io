@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-
+  public async rollADice(faces){
+    let randomNum = Math.floor(Math.random()*faces) + 1;
+    document.getElementById('diceResult').innerHTML = randomNum.toString();
+  }
   constructor() {}
 
 }
