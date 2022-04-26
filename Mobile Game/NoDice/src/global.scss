@@ -34,12 +34,23 @@
   background-position-y: top;
 }
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+.center {
+    text-align: center;
+=======
+>>>>>>> Stashed changes
 #d4 {
   background-image: url("Images/d4test.png");
   background-size: cover;
   height: 50px;
   width: 50px;
 
+<<<<<<< Updated upstream
+=======
+>>>>>>> 25482f385624522511c647512dfa0b945d755436
+>>>>>>> Stashed changes
 }
 
 * {
@@ -127,6 +138,7 @@
   box-shadow: 0px 15px 0px black;
   text-align: center;
   margin: auto;
+  transition: 0.1s;
 }
 
 #big-button:active {
