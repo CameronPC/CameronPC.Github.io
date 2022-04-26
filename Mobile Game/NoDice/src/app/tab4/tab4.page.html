@@ -1,9 +1,51 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>tab4</ion-title>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-buttons slot="start">
+        <ion-menu-button auto-hide="false"></ion-menu-button>
+      </ion-buttons>
+    </ion-buttons>
+    <ion-title align="center">No Dice</ion-title>
+
+
+    <ion-buttons slot="end">
+      <ion-button color="light">
+        <ion-icon slot="end" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-menu side="start" menu-id="first" content-id="main">
+  <ion-header>
+    <ion-toolbar color="dark">
+      <ion-title>Options</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>Main</ion-item>
+      <ion-item>Dice History</ion-item>
+      <ion-item>FAQ</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main">
+  <ion-content class="ion-padding">
+    <ion-menu-toggle>
+      <ion-button>Toggle Menu</ion-button>
+    </ion-menu-toggle>
+  </ion-content>
+</div>
 
+<ion-content>
+  <div class="background">
+    <div class="container">
+      <p>Click here to let us steal your credit card information</p>
+      <div id="big-button">
+        <p id="center">Click it</p>
+      </div>
+    </div>
+
+  </div>
 </ion-content>
