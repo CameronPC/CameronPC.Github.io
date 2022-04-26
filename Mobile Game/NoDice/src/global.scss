@@ -106,3 +106,33 @@
 .overflow {
   overflow-x: auto;
 }
+
+#big-button {
+  background-color: red;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border-width: 0px;
+  border-color: black;
+  font-family: Impact;
+  font-size: 40px;
+  box-shadow: 0px 15px 0px black;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+
+#big-button:active {
+  background-color: #d70909;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border-width: 0px;
+  border-color: black;
+  font-family: Impact;
+  font-size: 40px;
+  box-shadow: 0px 1px 0px black;
+  transform: translateY(14px);
+  transition: 0.1s;
+}
