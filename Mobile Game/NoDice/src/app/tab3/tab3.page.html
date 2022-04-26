@@ -6,6 +6,28 @@
   </ion-toolbar>
 </ion-header>
 
+<ion-menu side="start" menu-id="first" content-id="main">
+  <ion-header>
+    <ion-toolbar color="dark">
+      <ion-title>Options</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>Dice History</ion-item>
+      <ion-item>FAQ</ion-item>
+      <ion-item>In-App Purchases</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main">
+  <ion-content class="ion-padding">
+    <ion-menu-toggle>
+      <ion-button>Toggle Menu</ion-button>
+    </ion-menu-toggle>
+  </ion-content>
+</div>
+
 <ion-content [fullscreen]="true">
   <div class="background">
     <div class="ion-row">
