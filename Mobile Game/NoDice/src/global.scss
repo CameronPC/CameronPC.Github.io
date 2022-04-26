@@ -27,9 +27,9 @@
 
 .background {
   --ion-background-color: url("Images/Parchment.jpg");
-  width: auto;
-  height: auto;
-  background-size: auto;
+  background-position: inherit;
+  width: 100%;
+  background-size: cover;
 }
 
 * {
