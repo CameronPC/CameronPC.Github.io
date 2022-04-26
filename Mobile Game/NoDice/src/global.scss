@@ -143,6 +143,15 @@
   transition: 0.1s;
 }
 
+.ion-color-mossy {
+    --ion-color-base: var(--ion-color-mossy);
+    --ion-color-base-rgb: var(--ion-color-mossy-rgb);
+    --ion-color-contrast: var(--ion-color-mossy-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-mossy-contrast-rgb);
+    --ion-color-shade: var(--ion-color-mossy-shade);
+    --ion-color-tint: var(--ion-color-mossy-tint);
+}
+
 .container {
     text-align: center;
     padding: 20px;

@@ -4,12 +4,20 @@
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #3880ff;
-  --ion-color-primary-rgb: 56, 128, 255;
+  --ion-color-primary: #006600;
+  --ion-color-primary-rgb: 0, 102, 0;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #3171e0;
-  --ion-color-primary-tint: #4c8dff;
+  --ion-color-primary-shade: #005a00;
+  --ion-color-primary-tint: #1a751a;
+
+  /* Mossy Green*/
+  --ion-color-mossy: #006600;
+  --ion-color-mossy-rgb: 0, 102, 0;
+  --ion-color-mossy-contrast: #ffffff;
+  --ion-color-mossy-contrast-rgb: 255, 255, 255;
+  --ion-color-mossy-shade: #005a00;
+  --ion-color-mossy-tint: #1a751a;
 
   /** secondary **/
   --ion-color-secondary: #3dc2ff;
