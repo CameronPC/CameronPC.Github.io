@@ -16,7 +16,7 @@ export class Tab1Page {
 
   public async rollCustom(customvalue){
 
-    let customrandom = Math.floor(Math.random()*customvalue)
+    let customrandom = Math.floor(Math.random()*customvalue) + 1;
     console.log(customrandom);
     document.getElementById('diceResult').innerHTML = customrandom.toString();
   }
