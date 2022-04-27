@@ -10,6 +10,8 @@ export class Tab1Page {
     let randomNum = Math.floor(Math.random()*faces) + 1;
     console.log(randomNum);
     document.getElementById('diceResult').innerHTML = randomNum.toString();
+
+    
   }
   constructor() {}
 
