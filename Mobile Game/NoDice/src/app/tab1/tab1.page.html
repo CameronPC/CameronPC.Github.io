@@ -95,7 +95,11 @@
       </ion-col>
 
       <ion-col>
-        <ion-button>Custom D</ion-button>
+        <ion-button (click)="rollCustom(value)">Custom D</ion-button>
+      </ion-col>
+
+      <ion-col>
+        <ion-input style="background-color: white; color: black;" type="number" value="" [(ngModel)]="value"></ion-input>
       </ion-col>
     </ion-row>
   </ion-toolbar>
