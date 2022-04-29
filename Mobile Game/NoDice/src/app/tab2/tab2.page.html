@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      dice History
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -12,6 +12,22 @@
       <ion-title size="large">Tab 2</ion-title>
     </ion-toolbar>
   </ion-header>
-
+  <div class="background">
+    <div class="container">
+      <h1 id="dicehistory"></h1>
+    </div>
+  </div>
   <app-explore-container name="Tab 2 page"></app-explore-container>
+  
 </ion-content>
+<ion-footer>
+  <ion-toolbar class="ion-row overflow" color="mossy">
+    <ion-row align="center">
+      <ion-col>
+        <ion-button (click)="callhist()" style="color: black; background-color: darkgreen;">
+        get dice History</ion-button>
+      </ion-col>
+
+      </ion-row>
+      </ion-toolbar>
+</ion-footer>
